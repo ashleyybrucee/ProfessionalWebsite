@@ -1,0 +1,263 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    :root {
+      --bg: #f9f6f0;
+      --surface: #f0ebe1;
+      --border: #e4ddd0;
+      --text: #2c2820;
+      --muted: #a8977e;
+      --accent: #7a9e6e;
+      --accent-dim: #5a7d50;
+      --gold: #b5904a;
+      --gold-dim: #8a6c33;
+      --mono: 'IBM Plex Mono', monospace;
+      --sans: 'IBM Plex Sans', sans-serif;
+      --display: 'Playfair Display', serif;
+    }
+ 
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+ 
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 3rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(249,246,240,0.92);
+      backdrop-filter: blur(8px);
+    }
+ 
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+ 
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+ 
+    .page-header {
+      padding: 8rem 3rem 3rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 960px;
+    }
+ 
+    .page-header-left p.label {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+ 
+    h1 {
+      font-family: var(--display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--text);
+    }
+ 
+    .page-header-right { display: flex; gap: 1rem; flex-wrap: wrap; }
+ 
+    .btn {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.65rem 1.4rem;
+      border: 1px solid;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+ 
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+    .btn-primary:hover { background: transparent; color: var(--accent); }
+    .btn-outline { background: transparent; border-color: var(--border); color: var(--muted); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+ 
+    .resume-body {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      max-width: 960px;
+    }
+ 
+    .sidebar {
+      border-right: 1px solid var(--border);
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      background: var(--surface);
+    }
+ 
+    .sidebar-section h3 {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+ 
+    .sidebar-item { margin-bottom: 0.75rem; }
+    .sidebar-item p { font-size: 0.85rem; color: var(--text); font-weight: 400; }
+    .sidebar-item small { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+ 
+    .skill-bar-row { margin-bottom: 0.6rem; }
+ 
+    .skill-bar-label {
+      font-size: 0.82rem;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+    }
+ 
+    .skill-bar-label span { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); }
+    .skill-bar-track { height: 2px; background: var(--border); width: 100%; }
+    .skill-bar-fill { height: 2px; background: var(--accent); }
+ 
+    .main-content { padding: 3rem; }
+ 
+    .resume-section { margin-bottom: 3.5rem; }
+ 
+    .resume-section-title {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+ 
+    .job {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .job:last-child { border-bottom: none; }
+ 
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+ 
+    .job-title { font-family: var(--display); font-size: 1.15rem; font-weight: 700; color: var(--text); }
+    .job-date { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.04em; white-space: nowrap; }
+    .job-company { font-size: 0.88rem; color: var(--accent); margin-bottom: 1rem; }
+ 
+    .job-titles { display: flex; flex-direction: column; gap: 0.2rem; width: 100%; }
+    .job-title-row { display: flex; align-items: baseline; gap: 0.6rem; }
+    .job-title-row .job-title { font-size: 1.15rem; }
+    .job-title-row.promoted .job-title { font-size: 0.95rem; color: var(--muted); font-family: var(--sans); font-weight: 400; }
+    .promoted-badge {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.1rem 0.45rem;
+      white-space: nowrap;
+    }
+    .job-title-date {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      margin-left: auto;
+    }
+ 
+    .job ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+ 
+    .job ul li {
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding-left: 1.2rem;
+      position: relative;
+      line-height: 1.6;
+    }
+ 
+    .job ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold-dim);
+      font-size: 0.8rem;
+    }
+ 
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+ 
+    .edu-degree { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--text); }
+    .edu-school { font-size: 0.85rem; color: var(--accent); margin-top: 0.1rem; }
+    .edu-date { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+ 
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+ 
+    footer p { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a {
+      font-family: var(--mono); font-size: 0.75rem; color: var(--muted);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+ 
+    @media (max-width: 680px) {
+      nav { padding: 1rem 1.5rem; }
+      .page-header { padding: 7rem 1.5rem 2rem; }
+      .resume-body { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--border); padding: 2rem 1.5rem; }
+      .main-content { padding: 2rem 1.5rem; }
+      footer { padding: 1.5rem; }
+    }

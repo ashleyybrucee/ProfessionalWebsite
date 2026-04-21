@@ -1,35 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Example Domain</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        background: #eee;
-        width: 60vw;
-        margin: 15vh auto;
-        font-family: system-ui, sans-serif;
-      }
-      h1 {
-        font-size: 1.5em;
-      }
-      div {
-        opacity: 0.8;
-      }
-      a:link,
-      a:visited {
-        color: #348;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <h1>Example Domain</h1>
-      <p>
-        This domain is for use in documentation examples without needing
-        permission. Avoid use in operations.
-      </p>
-      <p><a href="https://iana.org/domains/example">Learn more</a></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Bruce</title>
+  <link rel="stylesheet" href="style/overview-style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">AB</a>
+  <ul class="nav-links">
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="#bookclub">Book Club</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="hero-text">
+    <p class="hero-label">// Backend Engineer</p>
+    <h1>Ashley<br /><em>Bruce</em></h1>
+    <p class="hero-bio">
+      Scientist meets software engineer. 
+      Currently open to new opportunities.
+    </p>
+    <div class="hero-links">
+      <a href="resume.html" class="btn btn-primary">Resume</a>
+      <a href="projects.html" class="btn btn-outline">Projects</a>
+      <!-- <a href="https://ashley.gorb.us" class="btn btn-outline" target="_blank">Personal Website ↗</a> -->
     </div>
-  </body>
+    </div>
+    <div class="hero-portrait-wrap">
+      <img class="hero-portrait" src="images/ashley-2.png" alt="Profile portrait" />
+    </div>
+  </div>
+
+  <!-- Leaving this commented out code in for now, in case I decide that I want to add these to the website later  -->
+
+  <!-- <div class="skills-strip">
+    <span class="skill-chip"><span>//</span> Java</span>
+    <span class="skill-chip"><span>//</span> Python</span>
+    <span class="skill-chip"><span>//</span> Docker</span>
+  </div> -->
+
+  <!-- <div class="section">
+    <p class="section-label">// Featured Work</p>
+    <h2>Projects & Publications</h2>
+    <div class="project-grid">
+      <a href="projects.html#api-gateway" class="project-card">
+        <h3>API Gateway</h3>
+        <p>High-throughput request routing service handling 50k req/s with rate limiting and auth middleware.</p>
+        <span class="project-tag">Go · Redis · Docker</span>
+        <span class="project-arrow">↗</span>
+      </a>
+      <a href="projects.html#data-pipeline" class="project-card">
+        <h3>Data Pipeline</h3>
+        <p>ETL pipeline ingesting and transforming 10M+ records daily from multiple upstream sources.</p>
+        <span class="project-tag">Python · Kafka · PostgreSQL</span>
+        <span class="project-arrow">↗</span>
+      </a>
+      <a href="projects.html#auth-service" class="project-card">
+        <h3>Auth Service</h3>
+        <p>OAuth 2.0 / JWT authentication microservice with refresh token rotation and audit logging.</p>
+        <span class="project-tag">Python · FastAPI · PostgreSQL</span>
+        <span class="project-arrow">↗</span>
+      </a>
+    </div>
+    <a href="projects.html" class="btn btn-outline" style="margin-top:1.5rem;">All Projects →</a>
+  </div>
+
+  <div class="section" id="bookclub">
+    <p class="section-label">// Community</p>
+    <h2>Book Club</h2>
+    <div class="bookclub-banner">
+      <div>
+        <h3>The Reading Room</h3>
+        <p>A monthly book club focused on fiction, science, and the occasional deep-dive into tech history. Open to all.</p>
+      </div>
+      <a href="../bookclub/" class="btn btn-outline">Visit Book Club →</a>
+    </div>
+  </div> -->
+
+</main>
+
+<footer>
+  <p>© 2026 Ashley Bruce</p>
+  <div class="footer-links">
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
 </html>

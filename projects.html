@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Ashley Bruce</title>
+  <link rel="stylesheet" href="style/projects-style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">AB</a>
+  <ul class="nav-links">
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="index.html#bookclub">Book Club</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <p class="label">// Things I've Built</p>
+  <h1>Projects & Publications</h1>
+</div>
+
+<div class="filter-bar">
+   <p class="label">A selection of personal projects — mostly from my time at University.</p>
+</div>
+
+<div class="publications-section">
+  <p class="section-label">// Publications</p>
+ 
+  <div class="paper-card">
+    <div class="paper-meta">
+      <span class="paper-venue">MICCAI 2022</span>
+      <span class="paper-year">Singapore &middot; 2022</span>
+    </div>
+    <h3>Greedy Optimization of Electrode Arrangement for Epiretinal Prostheses</h3>
+    <p class="paper-authors"><strong>Ashley Bruce</strong>, Michael Beyeler</p>
+    <p class="paper-abstract">
+      Visual neuroprostheses are the only FDA-approved technology for the treatment of retinal
+      degenerative blindness. Here we optimize the intraocular placement of epiretinal electrodes
+      using dictionary learning, informed by a psychophysically validated model of simulated
+      prosthetic vision. We evaluate three electrode placement strategies across a wide range of
+      possible phosphene shapes and recommend arrangements that maximize visual subfield coverage &mdash;
+      work that may guide the prototyping of next-generation neuroprostheses.
+    </p>
+    <div class="paper-links">
+      <a href="https://link.springer.com/chapter/10.1007/978-3-031-16449-1_57" target="_blank">Springer &#x2197;</a>
+      <a href="https://conferences.miccai.org/2022/papers/239-Paper1645.html" target="_blank">MICCAI &#x2197;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Filter bar for projects. Currently not enough that I'm showcasing to necessitate a filter bar, but would like to leave it in, so that 
+ as I add projects, I can come back and redo the filter bar later -->
+
+<!-- <div class="filter-bar">
+  <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+  <button class="filter-btn" onclick="filterProjects('dataVis', this)">Data Visualization</button>
+  <button class="filter-btn" onclick="filterProjects('python', this)">Python</button>
+</div> -->
+
+<div class="projects-wrap">
+  <p class="projects-section-label">// Academic Projects</p>
+  <div class="projects-grid" id="projects-grid">
+ 
+  <article class="project-card" id="data-vis-1" data-tags="dataVis">
+    <span class="project-number">01</span>
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+        <h2>Data Mining</h2>
+        <span class="project-status"><span class="status-dot archived"></span> Archived</span>
+      </div>
+      <p>An introductory project in data mining using data from the Seattle Public library.</p>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Processing</span>
+      <span class="tag">Data Visualization</span>
+      <span class="tag">SQL</span>
+    </div>
+    <div class="project-links">
+      <a href="https://vislab.mat.ucsb.edu/2021/p1/Ashley_Bruce/AshleyBruce1.html" target="_blank">Writeup ↗</a>
+    </div>
+  </article>
+
+  <article class="project-card" id="data-vis-2" data-tags="dataVis python">
+    <span class="project-number">02</span>
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+        <h2>3D Visualization</h2>
+        <span class="project-status"><span class="status-dot archived"></span> Archived</span>
+      </div>
+      <p>An application Seattle Public Library data to create a 3D visualization using the Convex-Hull algorithm.</p>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag">Processing</span>
+      <span class="tag">Data Visualization</span>
+      <span class="tag">SQL</span>
+    </div>
+    <div class="project-links">
+      <a href="https://vislab.mat.ucsb.edu/2021/p2/Ashley_Bruce/AshleyBruce2.html" target="_blank">Writeup ↗</a>
+    </div>
+  </article>
+
+  <article class="project-card" id="auth-service" data-tags="dataVis python">
+    <span class="project-number">03</span>
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+        <h2>Antibiotic Resistance</h2>
+        <span class="project-status"><span class="status-dot archived"></span> Archived</span>
+      </div>
+      <p>A visualization of E.coli resistance to different antibiotics and phages.</p>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag">Processing</span>
+      <span class="tag">Data Visualization</span>
+      <span class="tag">SQL</span>
+    </div>
+    <div class="project-links">
+      <a href="https://vislab.mat.ucsb.edu/2021/p3/Ashley_Bruce/AshleyBruce3.html" target="_blank">Writeup ↗</a>
+    </div>
+  </article>
+ 
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Ashley Bruce</p>
+  <div class="footer-links">
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<script>
+  function filterProjects(tag, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.project-card').forEach(card => {
+      if (tag === 'all') {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = (card.dataset.tags || '').includes(tag) ? 'flex' : 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

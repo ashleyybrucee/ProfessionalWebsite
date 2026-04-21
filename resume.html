@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Ashley Bruce</title>
+  <link rel="stylesheet" href="style/resume-style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">AB</a>
+  <ul class="nav-links">
+    <li><a href="resume.html" class="active">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="index.html#bookclub">Book Club</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-left">
+    <p class="label">// Resume</p>
+    <h1>Ashley Bruce</h1>
+  </div>
+  <div class="page-header-right">
+    <a href="resume.pdf" class="btn btn-primary" download>Download PDF ↓</a>
+  </div>
+</div>
+
+<div class="resume-body">
+
+  <aside class="sidebar">
+
+    <div class="sidebar-section">
+      <h3>Contact</h3>
+      <div class="sidebar-item"><p>San Francisco, CA</p></div>
+      <div class="sidebar-item">
+        <p><a href="https://github.com/ashleyybrucee?tab=repositories" style="color:var(--accent);text-decoration:none;">github/ashleyybrucee</a></p>
+      </div>
+      <div class="sidebar-item">
+        <p><a href="https://www.linkedin.com/in/ashleynicolebruce/" style="color:var(--accent);text-decoration:none;">linkedin/ashleybruce</a></p>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Core Languages</h3>
+      <div class="skill-bar-row">
+        <div class="skill-bar-label">Java <span>Expert</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-label">Python <span>Proficient</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-label">SQL <span>Proficient</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-label">JavaScript <span>Familiar</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:40%"></div></div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Tools & Tech</h3>
+      <div class="sidebar-item"><p>Docker · Postman</p></div>
+      <div class="sidebar-item"><p>Kafka · Prometheus</p></div>
+      <div class="sidebar-item"><p>Hazelcast · Jaeger</p></div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Tech Skills</h3>
+      <div class="sidebar-item"><p>Data Analysis</p></div>
+      <div class="sidebar-item"><p>Technical Writing</p></div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Soft Skills</h3>
+      <div class="sidebar-item"><p><small>Problem Solving</small></p></div>
+      <div class="sidebar-item"><p><small>Communication</small></p></div>
+      <div class="sidebar-item"><p><small>Collaboration</small></p></div>
+      <div class="sidebar-item"><p><small>Dependability</small></p></div>
+    </div>
+
+  </aside>
+
+  <main class="main-content">
+
+    <div class="resume-section">
+      <p class="resume-section-title">// Summary</p>
+      <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;">
+        Backend engineer with 4 years experience in building and maintaining distributed systems, APIs, and data infrastructure
+        at scale. Passionate about the intersection where computer science meets life science. Looking to move into a role more
+        research driven.
+      </p>
+    </div>
+
+    <div class="resume-section">
+      <p class="resume-section-title">// Experience</p>
+
+       <div class="job">
+        <div class="job-header">
+          <div class="job-titles">
+            <div class="job-title-row">
+              <span class="job-title">Software Engineer</span>
+              <span class="promoted-badge">promoted</span>
+              <span class="job-title-date">Apr 2024 – Present</span>
+            </div>
+            <div class="job-title-row promoted">
+              <span class="job-title">Associate Software Engineer</span>
+              <span class="job-title-date">Aug 2022 – Apr 2024</span>
+            </div>
+          </div>
+        </div>
+        <p class="job-company">Veeva Systems · San Francisco, CA</p>
+        <ul>
+          <li>Engineered distributed sync infrastructure serving hundreds of thousands of records, 
+            supporting both full-refresh and incremental data synchronization between cloud and offline-capable client devices.</li>
+          <li>Designed and implemented new processing logic for the upload pipeline to handle specialized record types, 
+            working across multiple product teams to define API contracts and ensure correctness at scale.</li>
+          <li>Contributed to a large-scale platform migration from a Salesforce-based legacy system to an internal 
+            native platform, rewriting and validating sync services to preserve data integrity across the transition.</li>
+          <li>Built reactive, asynchronous backend services in Java, with experience across the distributed systems 
+            stack including Kafka-based messaging, Hazelcast-backed state management, and observability tooling via Prometheus and Jaeger.</li>
+          <li>Served as a cross-functional collaborator between the sync team and several product teams, 
+            translating product requirements into backend data contracts and system behavior.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Graduate Student Researcher</span>
+          <span class="job-date">Oct 2021 – Jun 2022</span>
+        </div>
+        <p class="job-company">Bionic Vision Lab · UCSB</p>
+        <ul>
+          <li>Optimize the electrode placement in bionic vision implants to have more coverage of visual output.</li>
+          <li>Develop a framework utilizing evolutionary algorithms to generate viable implant options.</li>
+        </ul>
+        <br/>
+        <p class="job-company">Dynamic Networks: Analysis and Modeling Lab · UCSB</p>
+        <ul>
+          <li>Analyze interactions and build signed graph models to represent group dynamics</li>
+          <li>Apply deep learning topics to molecular data to learn rich embeddings.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Technical Mentor and Instructional Assistant</span>
+          <span class="job-date">Mar 2015 – Sept 2021</span>
+        </div>
+        <p class="job-company">Cal Poly, SLO · UCSB</p>
+        <ul>
+          <li>Design and execute data science projects that analyze real-world datasets to apply topics in machine learning, statistics, and data visualization.</li>
+          <li>Lead discussion sections, host office hours, and conduct workshop[s on topics in Biology, Chemistry, Physics, and Computer Science</li>
+          <li>Create and deliver project, lecture, and course materials to students.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <p class="resume-section-title">// Education</p>
+      <div class="edu-item">
+        <div>
+          <p class="edu-degree">M.S. Computer Science</p>
+          <p class="edu-school">University of California, Santa Barbara</p>
+        </div>
+        <span class="edu-date">2020 – 2022</span>
+      </div>
+        <div class="edu-item">
+        <div>
+          <p class="edu-degree">A.S. Computer Science</p>
+          <p class="edu-school">Cuesta College, San Luis Obispo</p>
+        </div>
+        <span class="edu-date">2019 – 2020</span>
+      </div>
+        <div class="edu-item">
+        <div>
+          <p class="edu-degree">B.S. Biological Sciences, Biotechnology Minor</p>
+          <p class="edu-school">California Polytechnic State University, San Luis Obispo</p>
+        </div>
+        <span class="edu-date">2015 – 2019</span>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <p>© 2026 Ashley Bruce</p>
+  <div class="footer-links">
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
