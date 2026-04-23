@@ -85,6 +85,7 @@
         <span class="hobby-toggle">collapse ↑</span>
       </div>
       <div class="gallery-wrap">
+        <button class="gallery-btn" onclick="scrollGallery('gallery-running', -1)">&#8592;</button>
         <div class="gallery" id="gallery-running">
           <div class="gallery-item">
             <img src="images/marathon-1.jpg" alt="Running" />
@@ -120,10 +121,7 @@
           </div>
         </div>
         
-        <div class="gallery-nav">
-          <button class="gallery-btn" onclick="scrollGallery('gallery-running', -1)">&#8592;</button>
-          <button class="gallery-btn" onclick="scrollGallery('gallery-running', 1)">&#8594;</button>
-        </div>
+        <button class="gallery-btn" onclick="scrollGallery('gallery-running', 1)">&#8594;</button>
       </div>
     </div>
 
