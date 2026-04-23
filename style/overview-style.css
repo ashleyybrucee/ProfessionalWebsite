@@ -359,6 +359,47 @@
     h1 { animation: fadeUp 0.6s 0.1s ease both; }
     .hero-bio { animation: fadeUp 0.6s 0.2s ease both; }
     .hero-links { animation: fadeUp 0.6s 0.3s ease both; }
+
+        .scroll-hint {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      cursor: pointer;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+      z-index: 50;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+    }
+    .scroll-hint.hidden { opacity: 0; pointer-events: none; }
+ 
+    .scroll-hint-label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+ 
+    .scroll-hint-chevron {
+      width: 18px;
+      height: 18px;
+      border-right: 1.5px solid var(--muted);
+      border-bottom: 1.5px solid var(--muted);
+      transform: rotate(45deg);
+      animation: chevronBob 1.6s ease-in-out infinite;
+    }
+ 
+    @keyframes chevronBob {
+      0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
+      50% { transform: rotate(45deg) translateY(4px); opacity: 1; }
+    }
  
     @media (max-width: 680px) {
       nav { padding: 1rem 1.5rem; }

@@ -38,6 +38,11 @@
     </div>
   </div>
 
+    <button class="scroll-hint" id="scrollHint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" aria-label="Scroll to about section">
+    <span class="scroll-hint-label">about me</span>
+    <span class="scroll-hint-chevron"></span>
+  </button>
+
   <div class="skills-strip">
     <span class="skill-chip"><span></span></span>
     <span class="skill-chip"><span>//</span> Programmer</span>
@@ -149,6 +154,16 @@
     const gallery = document.getElementById(id);
     gallery.scrollBy({ left: dir * 320, behavior: 'smooth' });
   }
+
+    // Fade scroll hint out once user starts scrolling
+  const scrollHint = document.getElementById('scrollHint');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      scrollHint.classList.add('hidden');
+    } else {
+      scrollHint.classList.remove('hidden');
+    }
+  }, { passive: true });
  
   // Drag-to-scroll for each gallery
   document.querySelectorAll('.gallery').forEach(gallery => {
