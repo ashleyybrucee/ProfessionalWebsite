@@ -31,7 +31,6 @@
     <div class="hero-links">
       <a href="resume.html" class="btn btn-primary">Resume</a>
       <a href="projects.html" class="btn btn-outline">Projects</a>
-      <!-- <a href="https://ashley.gorb.us" class="btn btn-outline" target="_blank">Personal Website ↗</a> -->
     </div>
     </div>
     <div class="hero-portrait-wrap">
@@ -39,41 +38,91 @@
     </div>
   </div>
 
-  <!-- Leaving this commented out code in for now, in case I decide that I want to add these to the website later  -->
-
-  <!-- <div class="skills-strip">
-    <span class="skill-chip"><span>//</span> Java</span>
-    <span class="skill-chip"><span>//</span> Python</span>
-    <span class="skill-chip"><span>//</span> Docker</span>
-  </div> -->
-
-  <!-- <div class="section">
-    <p class="section-label">// Featured Work</p>
-    <h2>Projects & Publications</h2>
-    <div class="project-grid">
-      <a href="projects.html#api-gateway" class="project-card">
-        <h3>API Gateway</h3>
-        <p>High-throughput request routing service handling 50k req/s with rate limiting and auth middleware.</p>
-        <span class="project-tag">Go · Redis · Docker</span>
-        <span class="project-arrow">↗</span>
-      </a>
-      <a href="projects.html#data-pipeline" class="project-card">
-        <h3>Data Pipeline</h3>
-        <p>ETL pipeline ingesting and transforming 10M+ records daily from multiple upstream sources.</p>
-        <span class="project-tag">Python · Kafka · PostgreSQL</span>
-        <span class="project-arrow">↗</span>
-      </a>
-      <a href="projects.html#auth-service" class="project-card">
-        <h3>Auth Service</h3>
-        <p>OAuth 2.0 / JWT authentication microservice with refresh token rotation and audit logging.</p>
-        <span class="project-tag">Python · FastAPI · PostgreSQL</span>
-        <span class="project-arrow">↗</span>
-      </a>
-    </div>
-    <a href="projects.html" class="btn btn-outline" style="margin-top:1.5rem;">All Projects →</a>
+  <div class="skills-strip">
+    <span class="skill-chip"><span></span></span>
+    <span class="skill-chip"><span>//</span> Programmer</span>
+    <span class="skill-chip"><span></span></span>
+    <span class="skill-chip"><span>//</span> Researcher</span>
+    <span class="skill-chip"><span></span></span>
+    <span class="skill-chip"><span>//</span> Runner</span>
+    <span class="skill-chip"><span></span></span>
+    <span class="skill-chip"><span>//</span> Reader</span>
+    <span class="skill-chip"><span></span></span>
+    <span class="skill-chip"><span>//</span> Crafter</span>
+    <span class="skill-chip"><span></span></span>
+    <span class="skill-chip"><span>//</span> Builder</span>
+    <span class="skill-chip"><span></span></span>
+    
   </div>
 
-  <div class="section" id="bookclub">
+
+  <div class="about-section" id="about">
+    <div class="about-bio-section">
+      <p class="section-label">// About</p>
+      <h2>Multi-Threaded</h2>
+      <div class="about-intro">
+        <p class="about-bio">
+          Hi!
+          I'm a backend engineer based in San Francisco with a background in research and science.
+          Outside of work, you can find me out on a long run, deep in a craft project, or curled up at home
+          with a good book. 
+          Here is a little window into the non-technical side of my life.
+        </p>
+        <img class="about-photo" src="images/ash-japan.jpg" alt="A photo of me" />
+      </div>
+    </div>
+ 
+    <!-- ── Running ── -->
+    <div class="hobby-block">
+      <div class="hobby-header" onclick="toggleGallery('gallery-running', this)">
+        <span class="hobby-title">Hobbies</span>
+        <span class="hobby-count">8 photos</span>
+        <span class="hobby-toggle">collapse ↑</span>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery" id="gallery-running">
+          <div class="gallery-item">
+            <img src="images/marathon-1.jpg" alt="Running" />
+            <span class="caption">North Olympic Discovery Marathon 2022</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/cs-dragon.jpg" alt="Crafting" />
+            <span class="caption">Combining cross stitch with D&D</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/marathon-2.jpg" alt="Running" />
+            <span class="caption">Light at the End of the Tunnel Marathon 2025</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/sandman.jpg" alt="Crafting" />
+            <span class="caption">A mask I made for Halloween one year</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/climb.png" alt="Climb" />
+            <span class="caption">Climbing action shot</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/stitching-card.jpg" alt="Crafting" />
+            <span class="caption">Started stitching my own cards instead of buying them</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/redwoods.jpg" alt="Hike" />
+            <span class="caption">Beautiful hike through the redwoods</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/read-1.jpg" alt="Reading" />
+            <span class="caption">Reading at a coffee shop - a favorite activity</span>
+          </div>
+        </div>
+        
+        <div class="gallery-nav">
+          <button class="gallery-btn" onclick="scrollGallery('gallery-running', -1)">&#8592;</button>
+          <button class="gallery-btn" onclick="scrollGallery('gallery-running', 1)">&#8594;</button>
+        </div>
+      </div>
+    </div>
+
+  <!-- <div class="section" id="bookclub">
     <p class="section-label">// Community</p>
     <h2>Book Club</h2>
     <div class="bookclub-banner">
@@ -81,9 +130,45 @@
         <h3>The Reading Room</h3>
         <p>A monthly book club focused on fiction, science, and the occasional deep-dive into tech history. Open to all.</p>
       </div>
-      <a href="../bookclub/" class="btn btn-outline">Visit Book Club →</a>
+      <a href="" class="btn btn-outline">Visit Book Club →</a>
     </div>
   </div> -->
+ 
+  </div>
+</main>
+ 
+<script>
+  function toggleGallery(id, header) {
+    const gallery = document.getElementById(id);
+    const toggle = header.querySelector('.hobby-toggle');
+    const isCollapsed = gallery.classList.toggle('collapsed');
+    toggle.textContent = isCollapsed ? 'expand ↓' : 'collapse ↑';
+  }
+ 
+  function scrollGallery(id, dir) {
+    const gallery = document.getElementById(id);
+    gallery.scrollBy({ left: dir * 320, behavior: 'smooth' });
+  }
+ 
+  // Drag-to-scroll for each gallery
+  document.querySelectorAll('.gallery').forEach(gallery => {
+    let isDown = false, startX, scrollLeft;
+    gallery.addEventListener('mousedown', e => {
+      isDown = true;
+      startX = e.pageX - gallery.offsetLeft;
+      scrollLeft = gallery.scrollLeft;
+    });
+    gallery.addEventListener('mouseleave', () => isDown = false);
+    gallery.addEventListener('mouseup', () => isDown = false);
+    gallery.addEventListener('mousemove', e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - gallery.offsetLeft;
+      gallery.scrollLeft = scrollLeft - (x - startX);
+    });
+  });
+</script>
+ 
 
 </main>
 
